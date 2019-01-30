@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Gen Minner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
+
 <body>
+    <div class="container">
+        <div class="item-header">
+            <h1>Gem Minner</h1>
+            <h2>Get the right value with the least digs!</h2>
+            <button id="start">START</button>
+        </div>
+        <div class="item-a">
+            <h3>Instruction</h3>
+            <ul>
+                <li>You will be given a random target value at the start of the game</li>
+                <li>There are four types of gems below. By clicking on a gem you will add a specific amount of points
+                    to the total value you get.</li>
+                <li>You win the game by matching the total value you got to the random target value.</li>
+                <li>You lose the game if the total value you got goes above the random target value.</li>
+                <li>The value of each of the gem is hidden. Guess it by clicking and checking the value monitor.</li>
+                <li>Every time when the game starts, the game will change the value of each gem!</li>
+            </ul>
+        </div>
+        <div class="item-b">
+            <h3>Taget Value</h3>
+            <p id ="targetval">&nbsp</p>
+        </div>
+        <div class="item-c">
+            <h3 id = "wins">Wins:</h3>
+            <h3 id = "losses">Losses:</h3>
+            <h3 id = "minGuesses">The Least Digs:</h3>
+            <p id = "win-lose" class="item-c-s">&nbsp</p>
+        </div>
+        <div class="item-d">
+            <img id = "gem1" src="assets/images/Gem1.png">
+        </div>
+        <div class="item-e">
+            <img id = "gem2" src="assets/images/Gem2.png">
+        </div>
+        <div class="item-f">
+            <img id = "gem3" src="assets/images/Gem3.png">
+        </div>
+        <div class="item-g">
+            <img id = "gem4" src="assets/images/Gem4.png">
+        </div>
+        <div class="item-h">
+            <h3>Value Monitor</h3>
+            <p id="total">&nbsp</p>
+        </div>
+        <div class="item-i">
+            <h3>Digs</h3>
+            <p id="guesses">&nbsp</p>
+        </div>
+    </div>
     
+    <script src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,185 @@
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 31pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    margin-bottom: 0.5em;
+}
+
+p { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:  14pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 20pt;
+    padding:0.25em 0.5em 0.25em 0.5em;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 254px 254px 254px 254px;
+    grid-template-rows: 100px 250px 100px 200px 100px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 2em 2em 2em 2em;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto 30px;
+    background-color: lightgray;
+}
+
+.item-header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+/* The instruction */
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+/* The Goal */
+.item-b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+    border: dashed 2px;
+    border-color: gray;
+    padding: 1em;
+    background-color:#B78C6C;
+}
+/* The count */
+.item-c {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+    border: dashed 2px;
+    border-color:gray;
+    padding: 0.7em 1em 0.7em 1em;
+    background-color: beige;
+}
+
+.item-c-s {
+    position: absolute;
+    right: 4em;
+    top: 2.2em;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* The Gems */
+.item-d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+
+.item-e {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+
+.item-f {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+
+.item-g {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    align-self: center;
+}
+/* The guess area */
+.item-h {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+    border: dashed 2px;
+    border-color: gray;
+    padding: 1em;
+    background-color: beige;
+}
+/* The dig count */
+.item-i {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+    border: dashed 2px;
+    border-color: gray;
+    padding: 1em;
+    background-color: beige;
+}
